@@ -1,6 +1,6 @@
 # Calculadora
 
-Uma calculadora desenvolvida em JavaScript, HTML5 e CSS3 baseada na calculadora do windows. Ela possui responsividade e modo escuro, além de ser muito fidedigna à do Windows.
+Uma calculadora desenvolvida em JavaScript, HTML5 e CSS3 baseada na calculadora do windows. Ela possui responsividade e modo escuro, além de ser muito proxima a oficial à do Windows.
 Desenvolvida durante uma sprint de duas semanas no treinamento de JavaScript.
 
 ## Funcionalidades possíveis
