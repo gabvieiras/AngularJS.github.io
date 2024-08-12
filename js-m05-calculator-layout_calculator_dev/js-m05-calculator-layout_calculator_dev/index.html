@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/icons8-calculator-48.png">
+ 
+  <title>Calculadora</title>
+ 
+  <script async src="script.js"></script>
+  <script async src="memory.js"></script>
+</head>
+ 
+<body onload="startProgram(), updateMemoryElements()">
+  <div id="container">
+    <div id="displayNumber">
+      <div id="display">
+        <div id="header">
+          <div id="menu" class="menu-icon">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">&#9776;</label>
+            <nav class="menu">
+              <ul>
+                <li><a href="#">Item 1</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="tittle">
+            <h3>Padrão</h3>
+          </div>
+          <div id="fullscreen"><img src="image/MicrosoftTeams-image.png" alt="iconFullscreen" id="janela"
+              width="20px"></div>
+          <div id="darkMode"><a><button id="darkButton">Dark Mode</button></a></div>
+          <div class="minimizeHistoric"><img src="image/verHistorico.svg" alt="" width="18px" height="18px"></div>
+        </div>
+        <div id="inputNumber">
+          <input type="text" name="display" id="calculusBar" readonly="readonly" value="">
+ 
+          <input type="text" id="displayBar" readonly="readonly" value="0">
+        </div>
+      </div>
+ 
+      <div id="number">
+        <div id="buttons">
+          <button class="mcMrColor displayMemoryOptions" id="mc">MC</button>
+          <button class="mcMrColor displayMemoryOptions" id="mr">MR</button>
+          <button class="displayMemoryOptions" id="m+">M+</button>
+          <button class="displayMemoryOptions" id="m-">M-</button>
+          <button class="displayMemoryOptions" id="ms">MS</button>
+          <div id="minimizeMemory"><button id="ms">M v</button></div>
+        </div>
+ 
+        <div id="row">
+          <button id="botaoOPC" class="valButton" value="%">%</button>
+          <button id="ce" class="changeButton" value="ce">CE</button>
+          <button id="c" class="changeButton" value="c">C</button>
+          <button id="backSpace" class="changeButton" value="backSpace"><img src="image/Back Space QWERTY.svg"
+              alt="" width="16px"></button>
+        </div>
+        <div id="row">
+          <button class="valButton" value="1/x"><img src="image/1 . x.svg" alt="" width="16px"
+              height="17px"></button>
+          <button class="valButton" value="²"><img src="image/superscript-svgrepo-com (1).svg" alt="" width="18px"
+              height="18px"></button>
+          <button class="valButton" value="√"><img src="image/raiz2.svg" alt="" width="18px" height="18px"></button>
+          <button class="opButton" value="÷"><img src="image/divisao novo.svg" alt="" width="26px"
+              height="23px"></button>
+        </div>
+        <div id="row">
+          <button class="numButton">7</button>
+          <button class="numButton">8</button>
+          <button class="numButton">9</button>
+          <button class="opButton" value="*"><img src="image/multi.svg" alt="" height="12px" width="14px"></button>
+        </div>
+        <div id="row">
+          <button class="numButton">4</button>
+          <button class="numButton">5</button>
+          <button class="numButton">6</button>
+          <button id="botaoOP" class="opButton" value="-"><img src="image/menos 3.svg" alt="" width="14px"
+              height="8px"></button>
+        </div>
+        <div id="row">
+          <button class="numButton">1</button>
+          <button class="numButton">2</button>
+          <button class="numButton">3</button>
+          <button id="botaoOP" class="opButton" value="+"><img src="image/mais.svg" alt=""
+              width="14px"></button></button>
+        </div>
+        <div id="row">
+ 
+          <button class="valButton" value="+-"><img src="image/+-.svg" alt="" width="18px" height="19px"></button>
+          <button class="numButton" value="0">0</button>
+          <button class="valButton" id="point" value="," style="font-size: 5mm;">,</button>
+          <button id="equalButton" value="="><img src="image/igual.svg" alt="" width="14px"></button>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <div id="right">
+ 
+      <div id="memoryAndHistoric">
+ 
+        <div id="top">
+          <button class="buttonHm" id="historicButton">Histórico</button>
+          <button class="buttonHm" id="memoryButton">Memória</button>
+        </div>
+ 
+        <div id="onClick">
+          <div id="historic">
+           
+          </div>
+          <div id="memory">
+          </div>
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+  </div>
+</body>
+ 
+</html>
